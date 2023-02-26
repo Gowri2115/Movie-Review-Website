@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TOP 5 LIST</title> 
+        <!-- Using a image in background and using back button to return to home page and determing the position of heading
+        and using Hover effects on button on both clockwise and anticlockwise direction and using a prompt to ask permission-->
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-image: url("back2.jfif");
+                background-position: left;
+                background-size: 100% 100%;
+            }
+            .back{
+                top: 0;
+                left: 0;
+            }                       
+           .txt{
+               position: absolute;
+                top: 0;
+                left: 32%;
+            }
+            div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 250px;
+  height: 250px;
+  background: white;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  transition: 1s box-shadow;
+  background-image: url("back.jfif");
+}
+
+div:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);  
+}
+
+div:hover::before, div:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #e9378a;
+  border-radius: 75px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+div:hover:after {
+  background: #e7bb35;
+  animation: 2s counterclockwise infinite;
+}
+
+
+@keyframes clockwise {
+  0% {
+    top: -10px;
+    left: 0;
+  }
+  12% {
+    top: -4px;
+    left: 4px;
+  }
+  25% {
+    top: 0;
+    left: 10px;    
+  }
+  37% {
+    top: 4px;
+    left: 4px;
+  }
+  50% {
+    top: 10px;
+    left: 0;    
+  }
+  62% {
+    top: 4px;
+    left: -4px;
+  }
+  75% {
+    top: 0;
+    left: -10px;
+  }
+  87% {
+    top: -4px;
+    left: -4px;
+  }
+  100% {
+    top: -10px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+        </style>
+    </head>
+    <body>
+
+    <form style="background-color: rgb(219, 173, 213);">
+    <fieldset><section class="back"><a href="../home.html"><img src="home.png" width="15%"></a></section>
+              <h1 class="txt">Top 5 Movies in The past 5 Years</h1></fieldset></form>
+    <div><a href="2015.html" onclick="return confirm('Are you sure')" style="text-decoration: none;"><h4>2015</h4></a></div></br>  <!--unique prompt -->
+    <div><a href="2016.html" onclick="return confirm('Are you sure')" style="text-decoration: none;"><h4>2016</h4></a></div></br>
+    <div><a href="2017.html" onclick="return confirm('Are you sure')" style="text-decoration: none;"><h4>2017</h4></a></div></br>  
+    <div><a href="2018.html" onclick="return confirm('Are you sure')" style="text-decoration: none;"><h4>2018</h4></a></div></br>
+    <div><a href="2019.html" onclick="return confirm('Are you sure')" style="text-decoration: none;"><h4>2019</h4></a></div></br>
+    </body>
+</html>
