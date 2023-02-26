@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+  
+    }
+    .header {
+      color:navy;
+      padding: 30px;
+      text-align: center;
+      text-shadow:2px 2px 5px red;
+      text-transform: uppercase;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: oldlace;
+      font-weight: bolder;
+      font-size: larger;
+      font-size: 30px;
+      
+      
+    }
+   
+    #marq {
+        color:navy;
+        margin: 0;
+        text-shadow:2px 2px 5px slateblue;
+        font-family: 'Times New Roman', Times, serif;
+        overflow: hidden;
+        background-color:palegoldenrod;
+        border: 2px solid;
+        padding-bottom: 10px;
+        font-size: 20px;
+        position: relative;
+        top: -25px;
+    }
+    #tabl {
+      
+        background-image: linear-gradient( #acb6e5,#86fde8);
+        width: 800px;
+        border: 1px solid green;
+        border-radius: 10px;
+        box-shadow: 5px 10px green;
+        padding: 20px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    video {
+        position: fixed;
+        z-index: -1;
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        
+        position: fixed;
+        overflow: hidden;
+        right: 0;
+        bottom: 0;
+    }
+    td {
+       border: 1px solid black;
+       width:50%;
+        height: 50%;
+        padding: 15px;
+        float:inline-end;
+        vertical-align: middle;
+        font-family: 'Times New Roman', Times, serif; 
+    }
+  
+    
+                  textarea {
+                      width: 100%;
+                      height: 100px;
+                      font-family: 'Times New Roman', Times, serif;
+                      resize: none;
+                  }
+                  select {
+                      width: 100%;
+                      padding: 5px 10px;
+                      border: 1px solid black;
+                      border-radius: 4px;
+          
+                    }
+                    table.center {
+                      margin-left: auto; 
+                      margin-right: auto;
+                    }
+                    .tab{
+                      padding-left:250px;
+      
+                 }
+                 .input {
+                  background-color: orange;
+                  border: 2px solid black;
+                  color:white;
+                  border-radius: 8px;
+                  padding: 10px 32px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  margin-left: -250px;
+                  margin-top: 40px;
+                  font-family: 'Times New Roman', Times, serif;
+                  position: relative;
+              top:-20px
+                }
+                .input2 {
+                  background-color:greenyellow;
+                  border: 2px solid black;
+                  color: black;
+                  padding: 10px 32px;
+                  border-radius: 8px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  margin-left: 80px;
+                  font-family: 'Times New Roman', Times, serif;
+                  position: relative;
+              top:-20px
+                }
+                .input3 {
+                  background-color:lightgray;
+                  border: 2px solid black;
+                  color: black;
+                  padding: 10px 32px;
+                  border-radius: 8px;
+                  text-align: center;
+                  text-decoration: none;
+                  display: inline-block;
+                  font-size: 16px;
+                  margin: 4px 2px;
+                  margin-left: 80px;
+                  font-family: 'Times New Roman', Times, serif;
+                  position: relative;
+              top:-20px
+                }
+                .footer {
+                  background-color: oldlace;
+                  text-align: center;
+                  padding: 5px;
+                  position: relative;
+                  top: 40px;
+                 
+                }
+                .previous {
+                  background-color:darkolivegreen;
+                  color: black;
+                  padding-top: 20px;
+                  border-radius: 10px;
+                  font-weight: bolder;
+                  border: 2px solid black;
+                  position: relative;
+                  top: -40px;
+                }
+                .reload {
+                  background-color:darkolivegreen;
+                  color: black;
+                  padding-top: 20px;
+                  border-radius: 10px;
+                  font-weight: bolder;
+                  border: 2px solid black;
+                  position:relative;
+                  right: -1250px; 
+                  top: -40px;
+                }
+                .previous:hover {
+                    background-color:#ddd;
+                }
+                .input:hover {
+                  background-color:#ddd;
+                }
+                .input2:hover {
+                  background-color: honeydew;
+                }
+                .reload:hover {
+                  background-color:#ddd;
+                }

@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MOVIE OF YEAR</title>
+<link rel="stylesheet" type="text/css" href="movie.css">
+</head>
+<body>
+    <!--DHARUN N . Created a toggle  method to toggle between dark and light mode.
+        When the images are hovered they are shifted to top right and their size is changed
+        When image is hoved the words appear
+        Every image were downloaded from google and used photoshop to mask and remove background 
+        -->
+
+<div id="toggle">
+    <i class="indicator"></i>
+</div>        
+<div id="head">MOVIE OF THE YEAR</div>    
+<table >
+    <tr>
+        <td>
+                <div class="container">
+                        <div class="card">
+                            <div class="content">
+                                <h2>BEST Picture</h2>
+                                <h1>Nomadland</h1>
+                            </div>
+                            <img src="images/best/bestpicture.png" >
+                        </div>
+                    </div>
+        </td>
+        <td>
+                <div class="container">
+                        <div class="card">
+                            <div class="content">
+                                <h2>BEST ACTOR</h2>
+                                <h1>MANK</h1>
+                                <p>Erik Messerschmidt</p>
+                            </div>
+                            <img src="images/best/cinematography.png" >
+                        </div>
+                    </div>
+                
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <div id="anthony" class="container">
+                        <div class="card">
+                            <div class="content">
+                                <h2>BEST ACTOR</h2>
+                                <h1>FATHER</h1>
+                                <p>ANTHONY HOPKINS</p>
+                            </div>
+                            <img src="images/best/anthony.png" width="50%" >
+                        </div>
+                    </div>
+                
+        </td>
+        <td>
+                <div class="container">
+                        <div class="card">
+                            <div class="content">
+                                <h2>BEST ACTRESS</h2>
+                                <h1>NONADLAND</h1>
+                                <p>Frances McDormand</p>
+                            </div>
+                            <img src="images/best/picture.png" >
+                        </div>
+                    </div>
+                
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <h2>BEST DIRECTOR</h2>
+                            <h1>NONADLAND</h1>
+                            <p>chloé zhao</p>
+                        </div>
+                        <img src="images/best/director.png" >
+                    </div>
+            </div>
+        </td>
+        <td>
+            <div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h2>BEST ANIMATED MOVIE</h2>
+                        <h1>SOUL</h1>
+                        </div>
+                        <img src="images/best/soul2.png" >
+                    </div>
+                </div>
+        </td>
+    </tr>
+</table>   
+    <script type="text/javascript">
+        var text = document.getElementById('head')
+        var shadow ='';
+        for(var i = 0; i < 50; i++)
+        { shadow +=(shadow? ',':'')+ i*1+'px '+ i*1+'px 0 goldenrod';}
+        text.style.textShadow = shadow;
+    </script>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            body.classList.toggle('active');
+        }
+    </script>   
+</body>
+</html>

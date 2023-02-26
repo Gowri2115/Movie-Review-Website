@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="casstud2.css"> <!--Added background video effects,added hover effect-->
+        <script src="exsheet.js">
+            </script>
+            <script>
+                function validate()
+                {
+                    var Phno=document.myform.phno.value                                                                                                                                                                                                                                                                   
+                    var dob=document.myform.age.value;
+                    var a=document.myform.address.value;
+                    var emailID=document.myform.email.value;
+                    var atpos=emailID.indexOf("@");
+                    var dotpos=emailID.lastIndexOf(".");
+                    if(document.myform.Name.value=="")
+                    {
+                    alert("U have left a blank");
+                    return false;
+                    }
+                    else if(atpos<1 || ((dotpos-atpos)<2))
+                    {
+                    alert("Please enter correct email id");
+                    return false;
+                    }
+                    else if(dob<18 && dob>=1)
+                    {
+                    alert("Persons who are below 18 are not advised.");
+                    return false;
+                    }
+                    else if(a=="")
+                    {
+                        alert("Fill your address to proceed");
+                        return false;
+                    }
+                    else if(isNaN(Phno) || Phno.length!=10)
+                    {
+                      alert("Phone number not valid");
+                      return false;
+                    }
+                    else
+                    {
+                        document.write("Your document has been submitted successfully");
+                    }
+
+                }
+            </script>
+
+
+        </head>
+        <body>
+        <form name="myform">
+            <table class="center">
+
+             
+            
+    <div class="header">Forms</div>
+    <a href="../home.html" class="previous" target="_blank">&laquo;Return to the Home Page</a>
+    <a href="formsrev2.html" class="reload">Reload&#128472</a>
+    <marquee id="marq" onMouseOver="document.getElementById('marq').stop();" onMouseOut="document.getElementById('marq').start();">Please enter the details below and submit.</marquee><!--Added marquee tag and used javascript- in mouseover and mouseout-->
+    <br><div id="tabl">
+    <b><label for="text">Name:</label></b><input type="text" id="text" placeholder="Enter your name" size="40" name="Name">
+    <br><br><b><label for="text">Gender:</label></b><input type="radio" name="gender" id="male" required><label for="male">Male</label>
+    <input type="radio" name="gender" id="female"><label for="female">Female</label>
+    <br><br><b><label for="age">Age:</label></b><input type="number" name="age" id="age" max="100" min="1" placeholder="Age" required>
+    <br><br><b><label for="phno">Phone number: </label></b><input type="number" name="phno" id="phno" placeholder="phno">
+                
+    <br><br><b><label for="email">Email:</label></b><input type="email" name="email" id="email" size="50"  placeholder="Enter your email">
+    <br><br><b><label for="password">Password:</label></b><input type="password" name="password" id="password"  placeholder="Enter your password" maxlength="16" size="50" required>
+    <br><br><b><label for="address">Address:</label></b><textarea name="address" id="address" placeholder="Enter your address"></textarea>                
+                  
+        
+
+               
+                 
+                 
+               
+        
+       <b><br><br><label for="genres">Genres of movies you like :</label></b>
+        &emsp;&emsp13;<input type="checkbox" name="action" id="action" >
+        <label for="agreement">Action</label>
+        &emsp;<input type="checkbox" name="Horror" id="Horror" >
+        <label for="agreement">Horror</label>
+        &emsp;<input type="checkbox" name="Science fiction" id="Science fiction">
+        <label for="agreement">Science fiction</label>
+        <br> &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;<input type="checkbox" name="Comedy" id="Comedy">
+       <label for="agreement">Comedy</label>
+       &emsp;<input type="checkbox" name="Drama" id="Drama">
+        <label for="agreement">Drama</label>
+        &emsp;<input type="checkbox" name="Documentary" id="Documentary">
+        <label for="agreement">Documentary</label>
+       
+                   
+
+
+                <b><br><label for="select">Select Yes/No:</label></b>
+                <br>Are you interested in watching movies at home :&emsp; 
+                <input type="radio" name="choices" id="yes">
+                <label for="choice">Yes</label>
+                <input type="radio" name="choices" id="no">
+                <label for="choice">No</label><br>
+                Are you interested in watching movies at theatres :&emsp13;
+                <input type="radio" name="choose" id="yes">
+                <label for="choice">Yes</label>
+                <input type="radio" name="choose" id="no">
+                <label for="choice">No</label><br><br> 
+                
+            
+                
+        
+
+                 <b><label for="favorite">Pick your favorite :</label></b> 
+                 <br>Which roles do you like the most in watching films? :
+                    <input type="checkbox" name="roles" id="actor">
+                     <label for="roles">Actor</label>
+                     <input type="checkbox" name="roles" id="actress">
+                     <label for="roles">Actress</label>
+                     <input type="checkbox" name="roles" id="Villain">
+                     <label for="roles">Villain</label>
+                     <input type="checkbox" name="roles" id="comedian">
+                     <label for="roles">Comedian</label>
+                 <br>Which film industries do you like the most?
+        
+                     
+                     &emsp;&emsp;&emsp;&emsp;<input type="checkbox" name="filmind" id="Hollywood">
+                     <label for="filmind">Hollywood</label>
+                     <input type="checkbox" name="filmind" id="Bollywood">
+                     <label for="filind">Bollywood</label>
+                     <input type="checkbox" name="filmind" id="Tollywood">
+                     <label for="filmind">Tollywood</label>
+                     <input type="checkbox" name="filmind" id="Kollywood">
+                     <label for="filmind">Kollywood</label>
+
+        
+                <b><br><br><label for="Popup Menu">Popup Menu:</label></b>
+                <br>How many movies do you watch in a month :
+        
+                 <select name="Popup Menu" id="Popup Menu"  style="width: 50px">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="above 5">Above 5</option>
+                </select><br>
+                <b><label for="com">Comments : </label></b>
+                <textarea id="text" name="text" required placeholder="Enter your comments" rows="5" cols="50"></textarea>
+                </div>
+                <video autoplay muted loop>
+                    <source src="Pexels Videos 2815410.mp4">
+                </video>
+    
+    <br>
+    
+    <div class="footer">
+    <span class="tab">
+    <input type="submit" value="Submit" class="input" onclick="validate()">
+    <button onclick="myfun()" class="input2">Try it</button>
+    <input type="reset" value="Reset" class="input3"></span>
+    </div>
+    </form>
+    </body>
+    </html>

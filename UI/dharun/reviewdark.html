@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>review redirect </title>
+        <link rel="stylesheet" type="text/css" href="reviewdark.css">
+
+    </head>
+    <body>
+        <!--DHARUN N. Ihave built a mechanism where when we scroll the images mountains(in front and behind), moon , stars move or scroll at different rate
+            Created card when hovered they rotate 180deg to show the details
+            hyperlinked a sun img to redirect to review.html which light mode
+        -->
+        <div id="home"><a href="../home.html"><img src="images/reviewdark/home.png" width='15%'></a></div>
+        <div id="direct"><a href="review.html"><img src="images/reviewdark/direct.png" width="130%"></a></div>
+        <section>
+            <h2 id="text">Reviews</h2>
+            <img src="images/reviewdark/stars.png" id="stars">
+            <img src="images/reviewdark/moon.png" id="moon">
+            <img src="images/reviewdark/mountains_behind.png" id="mountain_behind">
+            <img src="images/reviewdark/mountains_front.png" id="mountain_front">
+        </section>
+        <div class="review">
+            
+            <div class="sec">
+            <div class="movies"><a href="../Reviews/Shutter island.html">
+            <div class="imagebox"><img class="image" src="images/review images/shutterisland.jpg" id="shutterisland"></div>
+            <div class="details">
+            <div class="content" ><br><br><span class="shuttertxt" >Shutter Island</span><br><br><br>8.2</div>
+            </div></a>
+            </div>
+            </div>
+        <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+        <div class="sec">
+            
+        <div class="movies"><a href="../Reviews/Moneyball.html">
+                    <div class="imagebox"><img class="image" src="images/review images/moneyball.jpg" id="moneyball"></div>
+                    <div class="details">
+                    <div class="content" ><br><br><span class="moneyballtxt" >Money Ball</span><br><br><br>7.4</div>
+            </div></a>
+            </div>
+            </div>
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+        <div class="sec">
+            
+        <div class="movies"><a href="../Reviews/Kissingbooth.html">
+                <div class="imagebox"><img class="image" src="images/review images/kissing.jpg" id="kissingbooth"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="kissingboothtxt" >KISSING BOOTH</span><br><br><br>6.5</div>
+                </div></a>
+            </div>
+            </div>
+            
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+            
+            <div class="sec">
+                        
+            <div class="movies"><a href="../Reviews/INCEPTION.html">
+                <div class="imagebox"><img class="image" src="images/review images/inception.jpg" id="inception"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="inceptiontxt" >INCEPTION</span><br><br><br>8.1</div>
+                </div></a>
+            </div>
+            </div>
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+            
+            <div class="sec">
+            <div class="movies"><a href="../Reviews/Andhagaaram.html">
+                <div class="imagebox"><img class="image" src="images/review images/andha.jpg" id="andhagaaram"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="andhatxt" >ANDHAGHAARAM</span><br><br><br>7.8</div>
+                </div></a>
+            </div>
+            </div>
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+            
+            <div class="sec">
+            <div class="movies"><a href="../Reviews/The davinci code.html">
+                <div class="imagebox"><img class="image" src="images/review images/davincicode.jpg" id="davincicode"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="davintxt" >THE DAVINCI CODE</span><br><br><br>7.1</div>
+                </div></a>
+            </div>
+            </div>                        
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+            
+            <div class="sec">
+            <div class="movies"><a href="../Reviews/Master.html">
+                <div class="imagebox"><img class="image" src="images/review images/master.jpg" id="master"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="mastertxt" >MASTER</span><br><br><br>7.7</div>
+                </div></a>
+            </div>
+            </div>
+            <div></br></br></br><br></br></br></br><br></br></br></br><br><div>
+            
+            <div class="sec">
+            <div class="movies"><a href="../Reviews/Soodhu kavvum.html">
+                <div class="imagebox"><img class="image" src="images/review images/soodhu.jpg" id="soodhu"></div>
+                <div class="details">
+                    <div class="content" ><br><br><span class="soodhutxt" >SOODHU KAVVUM</span><br><br><br>8.3</div>
+                </div></a>
+            </div>
+            </div>
+
+        </div>
+        <script>
+            var stars = document.getElementById('stars');
+            var moon = document.getElementById('moon');
+            var mountain_behind = document.getElementById('mountain_behind');
+            var text = document.getElementById('text');
+            var mountain_front = document.getElementById('mountain_front');
+
+            window.addEventListener('scroll', function(){
+                var value= window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountain_behind.style.top = value * 0.5 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1 + 'px';
+                mountain_front.style.top = value * 0 + 'px';
+            });
+        </script>
+    </body>
+</html>
