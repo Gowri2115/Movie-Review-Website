@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="new.css">
+        
+    </head>
+    <body>
+        <!-- DHARUN N . I have intergreated video and used clip path to clip the videos to triangles and when scrolled these move-->
+        <!-- videos-->
+        <div id="page1">
+            <section id="section">
+                    <div class="side" id="side1">
+                        <video src="video/movie1.webm" type="webm" autoplay loop muted></video>
+                    </div> 
+                    <div class="side" id="side2">
+                            <video src="video/movie2.mp4" type="webm" autoplay loop muted></video>
+                        </div>
+                    <div class="side" id="side3">
+                        <video src="video/movie3.webm" type="webm" autoplay loop muted></video>
+                    </div>
+                    <div class="side" id="side4">
+                            <video src="video/movie4.webm" type="webm" autoplay loop muted></video>
+                    </div>
+                </section></div>
+    <section id="page2">
+    <table>
+    <tr>
+    <td>
+        <a href="top/top.html" onclick="return confirm('DO you want leave the site')" ><div class="container"><!--java script to ask for response-->
+            <div class="card">
+                <div class="content">
+                    <h3><br><br></h3>
+                    <p>03</p>
+                    <h1>TOP</h1>
+                    <h1>5</h1>
+                    <h2>MOVIES</h2>
+                </div>
+            </div>
+        </div></a>
+    </td>
+    <td>
+        <a href="upcoming and in/Upcomingmovies.html" onclick="return confirm('DO you want leave the site')"><div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h3><br><br></h3>
+                        <p>04</p>
+                        <h1>UPCOMING</h1>
+                        <h2>MOVIES</h2>
+                    </div>
+                </div>
+        </div></a>
+    </td>
+    <td>
+        <a href="upcoming and in/Movies Running In Theaters And In OTT Right Now.html" onclick="return confirm('DO you want leave the site')" ><div class="container">
+            <div class="card">
+                <div class="content">
+                    <h3><br><br></h3>    
+                    <p>05</p>
+                    <h1>MOVIES</h1>
+                    <h3>in</h3>
+                    <h2>THEATER</h2>
+                </div>
+            </div>
+        </div></a>
+    </td>
+    </tr>
+    <tr>
+    <td>
+            <a href="dharun/movie.html" onclick="return confirm('DO you want leave the site')"><div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h3><br><br></h3>
+                        <p>06</p>
+                        <h1>MOVIES</h1>
+                        <h3>OF THE</h3>
+                        <h2>YEAR</h2>
+                    </div>
+                </div>
+            </div></a>
+    </td>
+    <a href="register/formsrev2.html" onclick="return confirm('DO you want leave the site')"><div class="container">
+            <div class="card">
+                <div class="content">
+                    <h3><br><br></h3>
+                    <p>01</p>
+                    <h1>REGISTER</h1>
+                    <h3>TO</h3>
+                    <h2>REVIEW</h2>
+                </div>
+            </div>
+        </div></a>
+        <a href="dharun/review.html" onclick="return confirm('DO you want leave the site')" ><div class="container">
+            <div class="card">
+                <div class="content">
+                    <h3><br><br></h3>
+                    <p>02</p>
+                    <h1>REVIEW</h1>
+                </div>
+            </div>
+        </div></a>
+    <td>
+            <a href="dharun/contact.html" onclick="return confirm('DO you want leave the site')"><div class="container">
+                <div class="card">
+                    <div class="content">
+                        <h3><br><br></h3>    
+                        <p>07</p>
+                        <h1>CONTACT</h1>
+                        <h2>US</h2>
+                    </div>
+                </div>
+            </div>
+        </td></tr>
+    </tr></table>
+<!--when scrolled the cliped videos will move according to respective sides--> 
+    <script> 
+    var side1=document.getElementById('side1');
+    var side2=document.getElementById('side2');
+    var side3=document.getElementById('side3');
+    var side4=document.getElementById('side4');
+     window.addEventListener('scroll',function(){
+         side1.style.top = -window.pageYOffset + 'px';
+         side2.style.left = window.pageYOffset + 'px';
+         side3.style.top = window.pageYOffset + 'px'; 
+         side4.style.left =- window.pageYOffset + 'px';
+     });
+
+    </script>
+</section>
+    </body>
+</html>
